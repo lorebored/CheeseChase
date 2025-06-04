@@ -1,0 +1,273 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1D9319DC-75F4-4E8A-8CCE-8AD41AACBF41}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>CheeseChase_V0._0._1</RootNamespace>
+    <AssemblyName>CheeseChase_V0.0.1</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="formEnd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formEnd.Designer.cs">
+      <DependentUpon>formEnd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formStart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formStart.Designer.cs">
+      <DependentUpon>formStart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formPartita.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formPartita.Designer.cs">
+      <DependentUpon>formPartita.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="formEnd.resx">
+      <DependentUpon>formEnd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formPartita.resx">
+      <DependentUpon>formPartita.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formStart.resx">
+      <DependentUpon>formStart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imgs\gioco\gioco_serrandaChiusa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imgs\gioco\gioco_serrandaAperta.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imgs\menuStart\start_sfondo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imgs\icon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imgs\gioco_temporanee\pupetto1_temp.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imgs\gioco\carneCruda.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imgs\gioco\carneCotta.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imgs\gioco\formaggio.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imgs\gioco\insalata.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imgs\gioco\pane.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imgs\gioco\pomodoro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imgs\gioco\pilaCarneCruda.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imgs\gioco\pilaFormaggio.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imgs\gioco\pilaInsalata.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imgs\gioco\pilaPane.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imgs\gioco\pilaPomodoro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imgs\gioco\pilaPomodoro%281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imgs\gioco\bottoneSerranda.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imgs\gioco\SelezionaIngredienti.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imgs\gioco\Panini\paninoC.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imgs\gioco\Panini\paninoCompletoFC.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imgs\gioco\Panini\paninoCompletoFCP.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imgs\gioco\Panini\paninoCompletoIFC.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imgs\gioco\Panini\paninoCompletoIFCP.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imgs\gioco\Panini\paninoCP.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imgs\gioco\Panini\paninoF.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imgs\gioco\Panini\paninoFC.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imgs\gioco\Panini\paninoFCP.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imgs\gioco\Panini\paninoFP.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imgs\gioco\Panini\paninoI.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imgs\gioco\Panini\paninoIC.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imgs\gioco\Panini\paninoICP.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imgs\gioco\Panini\paninoIF.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imgs\gioco\Panini\paninoIFC.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imgs\gioco\Panini\paninoIFCP.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imgs\gioco\Panini\paninoIP.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imgs\gioco\Panini\paninoP.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imgs\gioco\Panini\SopraPane.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imgs\gioco\Panini\SottoPane.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imgs\gioco\Clienti\Cliente1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imgs\gioco\Clienti\Cliente2Arrabbiato.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imgs\gioco\Clienti\Cliente2Tranquillo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imgs\gioco\Clienti\ClienteBracaArrabbiato.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imgs\gioco\Clienti\ClienteBracaFurioso.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imgs\gioco\Clienti\ClienteBracaTranquillo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imgs\gioco\Polizia\MacchinaPolizia.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imgs\gioco\Polizia\Poliziotto.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imgs\gioco\cestino.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imgs\gioco\Panini\paninoIFP.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imgs\gioco\Panini\paninoReqFC.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imgs\gioco\Panini\paninoReqFCP.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imgs\gioco\Panini\paninoReqIFC.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imgs\gioco\Panini\paninoReqIFCP.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imgs\gioco\MBCarneFormaggio.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imgs\gioco\MBIngredientiSbagliati.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imgs\gioco\GameOver.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imgs\gioco\Regole.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
