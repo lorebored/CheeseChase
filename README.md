@@ -2,15 +2,19 @@
 
 **CheeseChase** è un gioco sviluppato in **C# con Windows Forms**, in cui il giocatore gestisce un food truck: prepara ordini, serve i clienti e cerca di guadagnare il più possibile, evitando i controlli della polizia.
 
+
 ## 🎮 Descrizione
 
 Vesti i panni di un venditore ambulante e affronta la sfida di gestire il tuo food truck in una città sempre più caotica. Prepara gli ordini in tempo, mantieni alta la soddisfazione dei clienti e fai attenzione alla polizia. Riuscirai a diventare il re del cibo da strada?
+
+---
 
 ## 🛠️ Tecnologie utilizzate
 
 - **Linguaggio:** C#
 - **Interfaccia grafica:** Windows Forms
 - **IDE consigliato:** Visual Studio 2017 o superiore
+
 
 ## 📁 Struttura del progetto
 
@@ -19,12 +23,14 @@ Vesti i panni di un venditore ambulante e affronta la sfida di gestire il tuo fo
 - `LICENSE` – Licenza del progetto
 - `README.md` – Questo file
 
+
 ## 🚀 Come compilare ed eseguire
 
 ### Requisiti
 
 - Windows 10 o 11
 - [Visual Studio 2017 o superiore](https://visualstudio.microsoft.com/it/)
+- [.NET Framework 4.6.1 o superiore](https://dotnet.microsoft.com/en-us/download/dotnet-framework)
 
 ### Istruzioni
 
@@ -41,7 +47,19 @@ Vesti i panni di un venditore ambulante e affronta la sfida di gestire il tuo fo
 
 5. Premi `F5` o clicca su **Avvia** per compilare ed eseguire il gioco.
 
+
+## 💾 Esecuzione rapida (solo EXE)
+
+1. Vai alla sezione **[Releases](https://github.com/lorebored/CheeseChase/releases)** del repository.
+2. Scarica il file `CheeseChase.exe`.
+3. Esegui il file con doppio clic.
+
+⚠️ Per eseguire correttamente il gioco, assicurati di avere installato il **.NET Framework 4.6.1 o superiore**.  
+Puoi scaricarlo da qui: [Download .NET Framework](https://dotnet.microsoft.com/en-us/download/dotnet-framework)
+
+
 ---
+
 
 ## 📜 Licenza
 
